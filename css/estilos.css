@@ -1,3 +1,9 @@
+@media screen and (min-width: 900px)
+{
+@font-face {
+  font-family: "dancingscript";
+  src:url("../fuentes/DancingScript-Regular.otf");
+}
 header{
 background-color: #5b7989;
 border-radius: 10px 10px 0 0;
@@ -25,10 +31,12 @@ margin: auto;
 {
 text-align: center;
 background-color: #82c3a6;
+
 }
 .imagen1 img
 {
   width: 60%;
+  box-shadow: 2px 2px 2px #02010a;
 }
 .imagen2
 {
@@ -42,9 +50,10 @@ background-color: #82c3a6;
 {
   margin: auto;
 }
-#opc1 img,a
+#opc1 img
 {
   width: 70%;
+  box-shadow: 2px 2px 2px #02010a;
 }
 #opc1 img:hover
 {
@@ -52,9 +61,10 @@ transform: rotate(10deg);
 border: 2px solid #82c3a6;
 box-shadow:2px 2px 2px #82c3a6;
 }
-#opc2 img,a
+#opc2 img
 {
   width: 70%;
+  box-shadow: 2px 2px 2px #02010a;
 }
 #opc2 img:hover
 {
@@ -66,10 +76,140 @@ box-shadow:2px 2px 2px #82c3a6;
 {
   display: flex;
   flex-direction: row;
-  text-align: center;
   justify-content: space-between;
+  background-color: #c6d5c5;
+  border-radius: 0 0 10px 10px;
+  margin: auto;
 }
-.pie #contacto
+.pie #redes,.pie #contacto,.pie #termino,.pie #derechos
 {
-  vertical-align: middle;
+  width: 25%;
+}
+.pie #contacto a,p
+{
+  margin-left: 2%;
+
+}
+body
+{
+  background-color: #02010a;
+display: flex;
+justify-content: center;
+}
+.contenido
+{
+  width: 900px;
+  font-family: "dancingscript";
+}
+}
+@media screen and (max-width: 899px)
+{
+  @font-face {
+    font-family: "dancingscript";
+    src:url("../fuentes/DancingScript-Regular.otf");
+  }
+body
+  {
+    background-color: #02010a;
+  display: flex;
+  justify-content: center;
+  }
+.contenido
+  {
+    width: 100%;
+    font-family: "dancingscript";
+    animation: animacion;
+  @webkit-keyframes animacion
+  {
+    0%{margin-top: 150%}
+    60%{margin-top: -5%}
+    100%{margin-top: 100%}
+  }
+
+  }
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  }
+.titulo,.menu {
+  margin: auto;
+  }
+.titulo h1
+  {
+    color: white;
+    text-shadow: 2px 2px #02010a;
+  }
+.menu a
+  {
+    color: white;
+    text-shadow: 2px 2px #02010a;
+  }
+.seleccion
+  {
+    text-decoration: none;
+  }
+.imagen1
+  {
+  text-align: center;
+  background-color: #82c3a6;
+
+  }
+.imagen1 img
+  {
+    width: 90%;
+    box-shadow: 2px 2px 2px #02010a;
+  }
+.imagen2
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px;
+    background-color: #d5c75f;
+  }
+#opc1, #opc2
+  {
+    margin: auto;
+  }
+#opc1 img
+  {
+    width: 80%;
+    box-shadow: 2px 2px 2px #02010a;
+  }
+#opc1 img:hover
+  {
+  transform: rotate(10deg);
+  border: 2px solid #82c3a6;
+  box-shadow:2px 2px 2px #82c3a6;
+  }
+#opc2 img
+  {
+    width: 80%;
+    box-shadow: 2px 2px 2px #02010a;
+  }
+#opc2 img:hover
+  {
+    transform: translate3d(20px,-5px,0);
+    border: 2px solid #82c3a6;
+    box-shadow:2px 2px 2px #82c3a6;
+  }
+  .pie
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #c6d5c5;
+    border-radius: 0 0 10px 10px;
+    margin: auto;
+  }
+  .pie #redes,.pie #contacto,.pie #termino,.pie #derechos
+  {
+    width: 100%;
+  }
+  .pie #contacto a,p
+  {
+    margin-left: 2%;
+  }
 }
