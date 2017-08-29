@@ -54,10 +54,12 @@ background-color: #82c3a6;
 {
   width: 70%;
   box-shadow: 2px 2px 2px #02010a;
+  transition-duration: 1s;
 }
 #opc1 img:hover
 {
 transform: rotate(10deg);
+transition-duration: 1s;
 border: 2px solid #82c3a6;
 box-shadow:2px 2px 2px #82c3a6;
 }
@@ -65,10 +67,12 @@ box-shadow:2px 2px 2px #82c3a6;
 {
   width: 70%;
   box-shadow: 2px 2px 2px #02010a;
+  transition-duration: 1s;
 }
 #opc2 img:hover
 {
   transform: translate3d(20px,-5px,0);
+  transition-duration: 1s;
   border: 2px solid #82c3a6;
   box-shadow:2px 2px 2px #82c3a6;
 }
@@ -95,6 +99,18 @@ body
   background-color: #02010a;
 display: flex;
 justify-content: center;
+animation: mianimacion 2s;
+}
+@-webkit-keyframes mianimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 .contenido
 {
@@ -113,19 +129,23 @@ body
     background-color: #02010a;
   display: flex;
   justify-content: center;
+  animation: mianimacion 2s;
   }
 .contenido
   {
     width: 100%;
     font-family: "dancingscript";
-    animation: animacion;
-  @webkit-keyframes animacion
-  {
-    0%{margin-top: 150%}
-    60%{margin-top: -5%}
-    100%{margin-top: 100%}
   }
-
+  @-webkit-keyframes mianimacion{
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
   }
 header{
   background-color: #5b7989;
@@ -177,10 +197,12 @@ header{
   {
     width: 80%;
     box-shadow: 2px 2px 2px #02010a;
+    transition-duration: 1s;
   }
 #opc1 img:hover
   {
   transform: rotate(10deg);
+  transition-duration: 1s;
   border: 2px solid #82c3a6;
   box-shadow:2px 2px 2px #82c3a6;
   }
@@ -188,10 +210,12 @@ header{
   {
     width: 80%;
     box-shadow: 2px 2px 2px #02010a;
+    transition-duration: 1s;
   }
 #opc2 img:hover
   {
     transform: translate3d(20px,-5px,0);
+    transition-duration: 1s;
     border: 2px solid #82c3a6;
     box-shadow:2px 2px 2px #82c3a6;
   }
