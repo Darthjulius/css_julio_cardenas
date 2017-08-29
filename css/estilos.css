@@ -38,7 +38,7 @@ background-color: #82c3a6;
   border: 1px;
   background-color: #d5c75f;
 }
-#opc, #opc2
+#opc1, #opc2
 {
   margin: auto;
 }
@@ -49,8 +49,8 @@ background-color: #82c3a6;
 #opc1 img:hover
 {
 transform: rotate(10deg);
-border: 2px;
-box-shadow:5px 5px 5px #82c3a6;
+border: 2px solid #82c3a6;
+box-shadow:2px 2px 2px #82c3a6;
 }
 #opc2 img,a
 {
@@ -59,4 +59,17 @@ box-shadow:5px 5px 5px #82c3a6;
 #opc2 img:hover
 {
   transform: translate3d(20px,-5px,0);
+  border: 2px solid #82c3a6;
+  box-shadow:2px 2px 2px #82c3a6;
+}
+.pie
+{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+.pie #contacto
+{
+  vertical-align: middle;
 }
