@@ -22,11 +22,11 @@
   </section>
   <section class="imagen2">
   <nav id="opc1">
-      <a href="paisajes/paisajes.html" title="Paisajes"><img src="imgs/bird.jpg"></a>
+      <a href="paisajes/paisajes.html" title="Paisajes"><img src="imgs/come.jpg"></a>
       <p><strong>Paisajes</strong></p>
   </nav>
   <nav id="opc2">
-      <a href="retratos/retratos.html" title="Retratos"><img src="imgs/come.jpg"></a>
+      <a href="retratos/retratos.html" title="Retratos"><img src="imgs/bird.jpg"></a>
       <p><strong>Retratos</strong></p>
   </nav>
   </section>
